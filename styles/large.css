@@ -1,0 +1,61 @@
+/* General Layout for Larger Screens */
+body {
+  margin: 0 auto;
+  max-width: 1200vh ;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+header figure img {
+  width: 120px;
+  height: auto;
+}
+
+/* Navigation */
+nav ul {
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav ul li {
+  border: none;
+}
+
+nav ul li a {
+  padding: 0.5rem 1rem;
+  justify-content:space-between;
+}
+
+/* Main Content */
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+
+/* Responsive Cards */
+section {
+  transition: transform 0.3s;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-items: center;
+  align-items: flex-end;
+  font-size: 0.9rem;
+  padding: 1.5rem;
+}
