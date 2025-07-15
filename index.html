@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abraham James Watongola Kaana"/>
+    <meta name="description" content="WDD231- Web Development 1 by James Abraham Kaana W. Key words: Javascript, CSS and HTML. deep, learning, device compatible"/>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    
+    <script src="scripts/homepage.js" defer></script>
+    <title>WDD231 - Web Development 1 - James Abraham W. Kaana</title>
+</head>
+<body>
+
+    <header>
+        <figure>
+            <img src="images/jamespic.jpg" alt="Kaana" width="120" height="120">
+            <figcaption>Kaana</figcaption>
+        </figure>
+        <h1>Abraham James Watongola Kaana</h1>
+    </header>
+
+    <!-- Hamburger Menu -->
+    <div class="hamburger">&#9776;</div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="https://github.com/watoja">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/abraham-james-watongola/">LinkedIn</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <section id="coursework">
+            <h2>Course Work</h2>
+            <p>This assignment demonstrates your prerequisite knowledge by applying HTML, CSS, and JavaScript.</p>
+        </section>
+
+        <section id="location">
+            <h2>Masaka, Uganda</h2>
+            <figure>
+                <img src="images/equator.jpg" alt="Equator">
+            </figure>
+            <p>Equator, Latitude 0</p>
+        </section>
+
+        <section id="assignment">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div id="course">
+                <ul>
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">CSE</a></li>
+                    <li><a href="#">WDD</a></li>    
+                </ul>
+            </div>
+            <div id="classes">
+                <button onclick="location.href='#'">CSE 110</button>
+                <button onclick="location.href='#'">WDD 130</button>
+                <button onclick="location.href='#'">CSE 111</button>   
+                <button onclick="location.href='#'">CSE 210</button>
+                <button onclick="location.href='#'">WDD 131</button>
+                <button onclick="location.href='#'">WDD 231</button>  
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Abraham Watongola James | Uganda</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
