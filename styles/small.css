@@ -125,9 +125,11 @@ section {
     transition: background-color 0.3s ease;
 }
 
-.course-filters button:hover,
+.course-filters button:hover{
+  background-color: #2c3e50;
+}
 .course-filters button.active {
-    background-color: #2980b9; /* Darker blue */
+    background-color: #27ae60; /* Darker blue */
 }
 
 /* Course Cards Grid - Mobile specific adjustments */
@@ -180,6 +182,9 @@ footer {
 }
 
 .social-links {
+    display: inline;
+    justify-content:space-between;
+    padding-inline: 15px;
     margin-bottom: 1rem;
 }
 

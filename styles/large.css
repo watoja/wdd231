@@ -29,10 +29,18 @@
     nav ul li:last-child a {
         border-right: none;
     }
+    .top-layout-container {
+    display: grid;
+    
+    grid-template-columns: 7fr 2fr;
+    gap: 2rem; /* Adds space between the two columns */
+    margin-bottom: 2rem; /* Adds space below this container */
+}
+
 
     /* Main Content */
     main {
-        max-width: 1000px; /* Constrain max width for content */
+        
         margin: 0 auto; /* Center main content */
         padding: 2rem;
     }
