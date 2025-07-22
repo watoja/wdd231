@@ -1,191 +1,65 @@
-/* Styles for screens 768px and wider (e.g., tablets in landscape, desktops) */
 @media (min-width: 768px) {
-    /* Header Adjustments */
+    /* Header */
     header {
-        /* On larger screens, align logo and title to the start (left) */
-        justify-content: flex-start;
-        padding: 1.5rem 2rem; /* More padding for a larger header */
+        justify-content: flex-start; /* Align logo and title to start */
     }
 
-    .site-logo {
-        height: 80px; /* Slightly larger logo */
-    }
-
-    .site-title {
-        font-size: 1.8rem; /* Larger site title */
-    }
-
-    /* Hide the hamburger icon on larger screens */
     .hamburger-icon {
-        display: none;
+        display: none; /* Hide hamburger on larger screens */
     }
 
-    /* Navigation Adjustments for Desktop */
+    /* Navigation */
     nav {
         position: static; /* Remove absolute positioning */
         display: block; /* Always show on large screens */
         width: auto;
-        background-color: #000000; /* Black background for horizontal nav */
-        padding: 0.5rem 0; /* Vertical padding for the nav bar */
+        box-shadow: none;
     }
 
     nav ul {
         display: flex; /* Horizontal navigation */
         justify-content: center; /* Center the links */
-        margin: 0 auto; /* Center nav links */
     }
 
     nav ul li a {
-        border-bottom: none; /* Ensure no bottom border for horizontal nav */
-        border-right: 1px solid rgba(16, 14, 14, 0.1); /* Subtle separator */
-        /* Adjusted padding for more balanced spacing */
-        padding: 0.8rem 2.5rem; /* Increased horizontal padding */
-        font-size: 2rem; /* Slightly larger font for nav links */
-        transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+        border-bottom: none;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     nav ul li:last-child a {
-        border-right: none; /* Remove border from the last item */
+        border-right: none;
     }
 
-    /* Hover effect for navigation links */
-    nav ul li a:hover,
-    nav ul li a.active {  
-        color: #99b5e3; /* Black text on lime green */
-    }
-
-    /* Main Content Layout Adjustments */
+    /* Main Content */
     main {
-        margin: 0 auto; /* Center the main content block horizontally */
-        padding: 2rem; /* Increase padding for more breathing room */
+        max-width: 1000px; /* Constrain max width for content */
+        margin: 0 auto; /* Center main content */
+        padding: 2rem;
     }
 
     h1 {
-        color: #000000; /* Black for main heading */
-        text-align: center;
-        margin-top: 1.5rem; /* Space above H1 */
-        margin-bottom: 2rem; /* Space below H1 */
+        font-size: 2.5rem;
     }
 
     h2 {
-        color: #000000; /* Black for section headings */
-        text-align: center;
-        margin-bottom: 1rem; /* Space below H2 */
-        padding: 0.5rem 0; /* Padding for the heading background */
-        background-color: #D3D3D3; /* Light grey background for headings */
-        border-radius: 5px; /* Slightly rounded corners */
+        font-size: 2rem;
     }
 
     section {
-        background-color: #FFFFFF; /* White background for sections */
-        padding: 2.5rem; /* More padding for larger sections */
-        margin-bottom: 2rem; /* More space between sections */
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        border: 1px solid #ADD8E6; /* Light blue border */
+        padding: 2rem;
     }
-
-    /* Two-Column Layout for About Me and Student Photo */
-    .top-layout-container {
-        display: grid;
-        grid-template-columns: 12fr 7fr; /* 60:35 ratio */
-        gap: 2rem; /* Space between the columns */
-        margin-bottom: 2rem; /* Space below this container */
-    }
-
-    .intro-section {
-        padding: 2.5rem; /* Consistent padding */
-    }
-
-    .student-photo-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: #FFFFFF;
-        padding: 2.5rem;
-        border-radius: 15px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        border: 1px solid #ADD8E6;
-    }
-
-    .photo-placeholder {
-        width: 300px;
-        height: 480px;
-        background-color: #D3D3D3;
-        border: 2px solid #ADD8E6;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #666;
-        font-size: 0.9rem;
-        text-align: center;
-        overflow: hidden;
-    }
-
-    /* Course Filters */
-    .course-filters {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        flex-wrap: wrap;
-    }
-
-    .course-filters button {
-        padding: 0.8rem 1.5rem;
-        font-size: 1.1rem;
-    }
-    .social-links {
-       margin-bottom: 1rem;
-    }
-
-   .social-icon {
-       height: 30px;
-       width: 30px;
-       margin: 0 0.5rem;
-       vertical-align: middle;
-       transition: transform 0.2s ease;
-   }
-
-footer p {
-    margin: 0.5rem 0;
-}
 
     /* Course Cards Grid - Multiple columns on larger screens */
     .course-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    }
+    body {
+        overflow-x: hidden; /* Ensure no horizontal scroll */
     }
 
-    .course-card {
-        padding: 1.5rem;
-    }
-
-    .course-card h3 {
-        font-size: 1.3rem;
-    }
-
-    .credits-total {
-        padding-right: 0;
-        text-align: center;
-        font-size: 1.1rem;
-        margin-top: 2rem;
-    }
-
-    /* Footer Adjustments */
-    footer {
-        display: block;
-        justify-content: center;
-        padding: 2rem;
-        font-size: 1rem;
-        background-color: #000000;
-        color: #ADD8E6;
-    }
-
-    /* General desktop text adjustments to ensure text does not touch edges */
+    /* No text touching edges - managed by padding on main and sections */
     main, section {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
