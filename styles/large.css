@@ -1,52 +1,175 @@
-/* large.css - Styles for larger screens */
 @media (min-width: 768px) {
-  body {
-      text-align: left;
-      max-width: 1200px;
-      margin: 0 auto;
-      background-color: #ffffff;
-  }
+    /* Header Adjustments */
+    header {
+        /* On larger screens, align logo and title to the start (left) */
+        justify-content: flex-start;
+        padding: 1.5rem 2rem; /* More padding for a larger header */
+    }
 
-  .hamburger {
-      display: none;
-  }
+    .site-logo {
+        height: 60px; /* Slightly larger logo */
+    }
 
-  nav ul {
-      display: flex;
-      justify-content: space-around;
-      padding: 10px 0;
-  }
+    .site-title {
+        font-size: 1.8rem; /* Larger site title */
+    }
 
-  nav ul li {
-      display: inline;
-      padding: 0 15px;
-  }
+    /* Hide the hamburger icon on larger screens */
+    .hamburger-icon {
+        display: none;
+    }
 
-  h1 {
-      font-size: 2.5rem;
-      text-align: center;
-  }
+    /* Navigation Adjustments for Desktop */
+    nav {
+        position: static; /* Remove absolute positioning */
+        display: block; /* Always show on large screens */
+        width: auto;
+        background-color: #000000; /* Black background for horizontal nav */
+        padding: 0.5rem 0; /* Vertical padding for the nav bar */
+    }
 
-  figure {
-      text-align: center;
-  }
+    nav ul {
+        display: flex; /* Horizontal navigation */
+        justify-content: center; /* Center the links */
+        max-width: 1000px; /* Match main content width */
+        margin: 0 auto; /* Center nav links */
+    }
 
-  main {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 20px;
-      padding: 20px;
-  }
+    nav ul li a {
+        border-bottom: none;
+        border-right: 1px solid rgba(255, 255, 255, 0.1); /* Subtle white separator */
+        /* Adjusted padding for more balanced spacing */
+        padding: 0.8rem 2.5rem; /* Increased horizontal padding */
+        font-size: 2rem; /* Slightly larger font for nav links */
+    }
 
-  section {
-      background-color: #f9f9f9;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+    nav ul li:last-child a {
+        border-right: none;
+    }
+    
 
-  footer {
-      text-align: center;
-      padding: 20px;
-  }
+    /* Main Content Layout Adjustments */
+    main {
+        margin: 0 auto; /* Center the main content block horizontally */
+        padding: 2rem; /* Increase padding for more breathing room */
+    }
+
+    h1 {
+        color: #000000; /* Black for main heading */
+        text-align: center;
+        margin-top: 1.5rem; /* Space above H1 */
+        margin-bottom: 2rem; /* Space below H1 */
+    }
+
+    h2 {
+        color: #000000; /* Black for section headings */
+        text-align: center;
+        margin-bottom: 1rem; /* Space below H2 */
+        padding: 0.5rem 0; /* Padding for the heading background */
+        background-color: #D3D3D3; /* Light grey background for headings */
+        border-radius: 5px; /* Slightly rounded corners */
+    }
+
+    section {
+        background-color: #FFFFFF; /* White background for sections */
+        padding: 2.5rem; /* More padding for larger sections */
+        margin-bottom: 2rem; /* More space between sections */
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        border: 1px solid #ADD8E6; /* Light blue border */
+    }
+
+    /* Two-Column Layout for About Me and Student Photo */
+    .top-layout-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr; 
+        gap: 2rem; /* Space between the columns */
+        margin-bottom: 2rem; /* Space below this container */
+    }
+
+    .intro-section {
+        padding: 2.5rem; /* Consistent padding */
+    }
+
+    .student-photo-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #FFFFFF;
+        padding: 2.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        border: 1px solid #ADD8E6;
+    }
+
+    .photo-placeholder {
+        width: 180px;
+        height: 180px;
+        background-color: #D3D3D3;
+        border: 2px solid #ADD8E6;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #666;
+        font-size: 0.9rem;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    /* Course Filters */
+    .course-filters {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .course-filters button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.1rem;
+    }
+    .social-links{
+      display:flex;
+      justify-content: center;
+    }
+
+    /* Course Cards Grid - Multiple columns on larger screens */
+    .course-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .course-card {
+        padding: 1.5rem;
+    }
+
+    .course-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .credits-total {
+        padding-right: 0;
+        text-align: center;
+        font-size: 1.1rem;
+        margin-top: 2rem;
+    }
+nav ul li a:hover,
+    nav ul li a.active {
+        background-color: #222722; /* Lime Green on hover/active */
+        color: #a2b6d4; /* Black text on lime green */
+    }
+
+    /* Footer Adjustments */
+    footer {
+        padding: 2rem;
+        font-size: 1rem;
+    }
+
+    /* General desktop text adjustments to ensure text does not touch edges */
+    main, section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }

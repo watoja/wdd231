@@ -3,81 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Abraham James Watongola Kaana"/>
-    <meta name="description" content="WDD231- Web Development 1 by James Abraham Kaana W. Key words: Javascript, CSS and HTML. deep, learning, device compatible"/>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description" content="WDD 231 - Web Frontend Development I:Applying designs and dynamic flow and interaction to websites- explore web designing at a deeper level">
+    <meta name="author" content="[Your Name]">
+    <title>WDD 231 - Abraham James Kaana Watongola</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
-    
+
     <script src="scripts/homepage.js" defer></script>
-    <title>WDD231 - Web Development 1 - James Abraham W. Kaana</title>
+    
 </head>
 <body>
-
     <header>
-        <figure>
-            <img src="images/jamespic.jpg" alt="Kaana" width="120" height="120">
-            <figcaption>Kaana</figcaption>
-        </figure>
-        <h1>Abraham James Watongola Kaana</h1>
+        <div class="header-content">
+            <a href="#" class="logo-link">
+                <img src="images/logo.png" alt="Site Logo" class="site-logo">
+            </a>
+            <span class="site-title">Abraham James Kaana Watongola</span>
+        </div>
+        <button id="hamburger-menu" class="hamburger-icon" aria-label="Toggle navigation">
+            &#9776; </button>
     </header>
 
-    <!-- Hamburger Menu -->
-    <div class="hamburger">&#9776;</div>
-
-    <nav>
+    <nav id="main-nav">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="https://github.com/watoja">GitHub Profile</a></li>
-            <li><a href="https://www.linkedin.com/in/abraham-james-watongola/">LinkedIn</a></li>
-        </ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="final/index.html">Final</a></li>
+            </ul>
     </nav>
 
     <main>
         <h1>Home</h1>
+        <div class="top-layout-container">
+            <section class="intro-section">
+               <h2>About Me</h2>
+               <p>Hello! My name is Abraham James Watongola Kaana, and I am a student passionate about web development. I am currently enrolled in the Web Frontend Development I course (WDD 231) at Brigham Young University-Idaho.This page is a demonstration of my foundational skills in HTML, CSS, and JavaScript.</p>
+               <p>I enjoy learning new technologies and solving problems through code. My goal is to become a proficient web developer, creating engaging and user-friendly experiences.</p>
+               <p>I'm excited to continue my journey in software development and build innovative web applications. Feel free to explore my projects linked on this page!</p>
+           </section>
+            <section class="student-photo-section">
+                <h2>Student Photo</h2>
+                <div class="photo-placeholder">
+                    <!-- You can place an image here later, e.g., <img src="images/your-photo.jpg" alt="Your Photo"> -->
+                     <img src="images/james.jpg" alt="Abraham" class="">
+                </div>
+            </section>
+        </div>
 
-        <section id="coursework">
-            <h2>Course Work</h2>
-            <p>This assignment demonstrates your prerequisite knowledge by applying HTML, CSS, and JavaScript.</p>
-        </section>
-
-        <section id="location">
-            <h2>Masaka, Uganda</h2>
-            <figure>
-                <img src="images/equator.jpg" alt="Equator">
-            </figure>
-            <p>Equator, Latitude 0</p>
-        </section>
-
-        <section id="assignment">
-            <h2>Web and Computer Programming Certificate</h2>
-            <div id="course">
-                <ul>
-                    <li><a href="#">All</a></li>
-                    <li><a href="#">CSE</a></li>
-                    <li><a href="#">WDD</a></li>    
-                </ul>
+        <section class="courses-section">
+            <h2>Web and Computer Programming Certificate Courses</h2>
+            <div class="course-filters">
+                <button id="filter-all" class="active">All Courses</button>
+                <button id="filter-wdd">WDD Courses</button>
+                <button id="filter-cse">CSE Courses</button>
             </div>
-            <div id="classes">
-                <button onclick="location.href='#'">CSE 110</button>
-                <button onclick="location.href='#'">WDD 130</button>
-                <button onclick="location.href='#'">CSE 111</button>   
-                <button onclick="location.href='#'">CSE 210</button>
-                <button onclick="location.href='#'">WDD 131</button>
-                <button onclick="location.href='#'">WDD 231</button>  
+            <div id="course-cards-container" class="course-grid">
+                </div>
+            <p class="credits-total">Total Credits Displayed: <span id="total-credits">0</span></p>
+            
+        </section>
+        <section>
+          <div class="social-links">
+            <a href="https://github.com/watoja" target="_blank" aria-label="GitHub Profile">
+                <img src="images/github.png" alt="GitHub" class="social-icon">
+            </a>
+            <a href="www.linkedin.com/in/abraham-james-watongola" target="_blank" aria-label="LinkedIn Profile">
+                <img src="images/linkedin.png" alt="LinkedIn" class="social-icon">
+            </a>
+            <a href="https://x.com/jimwattsabraha1" target="_blank" aria-label="X">
+                <img src="images/x.png" alt="LinkedIn" class="social-icon">
+            </a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> Abraham Watongola James | Uganda</p>
+        <p>&copy;<span id="currentyear"></span> Abraham James Kaana Watongola | Masaka, Uganda.</p>
         <p id="lastModified"></p>
     </footer>
-
 </body>
 </html>

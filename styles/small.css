@@ -1,66 +1,264 @@
-/* small.css - Styles for small screens */
+/* General Body Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; 
     margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #f4f4f4;
+    line-height: 1.6;
+    color: #333; /* 
+    background-color: #F0F8FF; /* Very light blue/almost white background */
+    overflow-x: hidden;
+    justify-content: center;
 }
 
+/* Header */
+header {
+    background-color: #000000; /* Black background */
+    color: #ADD8E6; /* Light Blue for text */
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* Stronger shadow for black header */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo {
+    height: 40px; /* Slightly smaller logo for mobile */
+    width: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.site-title {
+    font-size: 1.3rem; /* Slightly smaller title for mobile */
+    font-weight: bold;
+    color: #ADD8E6; /* Light Blue for site name */
+}
+
+.hamburger-icon {
+    background: none;
+    border: none;
+    color: #ADD8E6; /* Light Blue for hamburger/close icon */
+    font-size: 2rem;
+    cursor: pointer;
+    display: block; /* Show on small screens */
+    padding: 0.5rem; /* Make it easier to tap */
+}
+
+/* Navigation */
 nav {
-    background-color: #333;
-    padding: 10px;
+    background-color: #1A1A1A; /* Darker grey for navigation when open */
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    display: none; /* Hidden by default on small screens */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    top: 60px; /* Adjust based on header height (40px logo + padding) */
+    left: 0; /* Ensure it spans full width */
+}
+
+nav.open {
+    display: block; /* Show when open */
+  
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: none;
-    flex-direction: column;
-    text-align: center;
-}
-.classes{
-    background-color: black;
-    padding: 2px;
-}
-
-nav ul li {
-    padding: 10px;
 }
 
 nav ul li a {
-    color: white;
+    display: block;
+    justify-content: center;
+    padding: 1rem;
     text-decoration: none;
-    display: block;
+    color: #ADD8E6; /* Light Blue for nav links */
+    background-color: #333; /* Dark grey background for nav items */
+    margin-bottom: 2px; /* Small gap between nav items */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.hamburger {
-    display: block;
-    cursor: pointer;
-    color: rgb(18, 12, 12);
-    font-size: 1.5rem;
-    text-align: right;
-    padding: 10px;
+nav ul li:last-child a {
+    margin-bottom: 0; /* No margin after the last item */
 }
 
-.show-nav ul {
-    display: flex;
+nav ul li a:hover{
+  background-color: #abc2dd;
+}
+nav ul li a.active {
+    background-color: black; /* Lime Green on hover/active */
+    color: #acd8f3; /* Black text on lime green */
+}
+
+/* Main Content */
+main {
+    padding: 1rem;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 h1 {
-    font-size: 1.5rem;
-    color: #333;
+    color: #000000; /* Black for main heading */
+    text-align: center;
+    margin-top: 1.5rem; /* Space above H1 */
+    margin-bottom: 1.5rem;
 }
 
-figure img {
-    border-radius: 50%;
-    margin-top: 10px;
+h2 {
+    color: #000000; /* Black for section headings */
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0; /* Padding for the heading background */
+    background-color: #D3D3D3; /* Light grey background for headings */
+    border-radius: 5px; /* Slightly rounded corners */
 }
 
+section {
+    background-color: #f3f4f2; /* White background for sections */
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgba(21, 19, 19, 0.1);
+    border: 1px solid #042631; /* Light blue border */
+}
+
+/* Specific layout for the top sections (About Me, Student Photo) */
+/* On mobile, these should stack vertically */
+.top-layout-container {
+    display: block; /* Override grid for mobile */
+}
+
+.student-photo-section {
+    /* Ensure it stacks below About Me on mobile */
+    margin-top: 1.5rem; /* Space between About Me and Student Photo */
+    display: flex; /* Keep flex for centering content within */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid #ADD8E6;
+}
+
+.photo-placeholder {
+    width: 150px; /* Smaller placeholder for mobile */
+    height: 150px;
+    background-color: #D3D3D3;
+    border: 2px solid #ADD8E6;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 0.8rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Course Filters */
+.course-filters {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    display: flex; /* Use flexbox for buttons */
+    justify-content: center; /* Center buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap to next line if needed */
+    gap: 0.5rem; /* Smaller gap between buttons on mobile */
+}
+
+.course-filters button {
+    background-color: #ADD8E6; /* Light Blue for buttons */
+    color: #000000; /* Black text on light blue */
+    border: none;
+    padding: 0.7rem 1rem; /* Slightly less padding for mobile buttons */
+    margin: 0; /* Remove margin, use gap instead */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem; /* Smaller font for buttons */
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.course-filters button:hover,
+.course-filters button.active {
+    background-color: #a1cbea; /* Lime Green on hover/active */
+    color: #000000; /* Black text on lime green */
+}
+
+/* Course Cards Grid - Mobile specific adjustments */
+.course-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on small screens */
+    gap: 0.8rem; /* Slightly smaller gap between cards */
+}
+
+.course-card {
+    background-color: #F8F8FF; /* Very light subtle background for cards */
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-left: 5px solid #ADD8E6; /* Light Blue default border */
+}
+
+.course-card.completed {
+    border-left-color: #101110; /* Lime Green for completed courses */
+    background-color: #F0FFF0; /* Very light green background */
+}
+
+.course-card h3 {
+    margin-top: 0;
+    color: #000000; /* Black for card titles */
+    font-size: 1rem; /* Smaller card title for mobile */
+}
+
+.course-card p {
+    margin: 0.5rem 0;
+    font-size: 0.85rem; /* Smaller card text */
+    color: #333; /* Dark grey for card text */
+}
+
+.credits-total {
+    text-align: center; /* Center the credits total on mobile */
+    font-weight: bold;
+    margin-top: 1.5rem;
+    padding-right: 0; /* Remove right padding */
+    color: #000000; /* Black for total credits text */
+    font-size: 1rem; /* Adjusted font size */
+}
+
+/* Footer */
 footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    margin-top: 20px;
+    background-color: #000000; /* Black background */
+    color: #ADD8E6; /* Light Blue for general footer text */
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.85rem; /* Slightly smaller font for mobile footer */
+    margin-top: 2rem;
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-icon {
+    height: 25px; /* Smaller social icons for mobile */
+    width: 25px;
+    margin: 0 0.4rem;
+    vertical-align: middle;
+    transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(80deg) brightness(1.2); /* Tint to lime green */
+}
+
+footer p {
+    margin: 0.4rem 0; /* Slightly less margin for footer paragraphs */
 }
