@@ -92,14 +92,14 @@ document.addEventListener('DOMContentLoaded', () => {
             "subject": "WDD",
             "number": 331,
             "title": "Web Frontend Development II",
-            "credits": 3,
+            "credits": 2,
             "completed": false
         },
         {
             "subject": "CSE",
             "number": 210,
             "title": "Programming with Classes",
-            "credits": 2,
+            "credits": 3,
             "completed": true
         },
         {
@@ -134,6 +134,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const title = document.createElement('h3');
             title.textContent = `${course.subject} ${course.number}: ${course.title}`;
+
+            // Add a tick mark if the course is completed
+            if (course.completed) {
+                const tickSpan = document.createElement('span');
+                tickSpan.textContent = ' ✔️'; // Unicode checkmark
+                tickSpan.classList.add('completed-tick'); // Add a class for potential styling
+                title.appendChild(tickSpan);
+            }
 
             const credits = document.createElement('p');
             credits.textContent = `Credits: ${course.credits}`;

@@ -68,23 +68,27 @@ nav.open {
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 5px;
+    margin: 5px;
 }
 
 nav ul li a {
     display: block;
     justify-content: center;
     padding: 1rem;
+    padding-inline: 4px;
     text-decoration: none;
     color: #ADD8E6; /* Light Blue for nav links */
-    background-color: #333; /* Dark grey background for nav items */
     margin-bottom: 2px; /* Small gap between nav items */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li:last-child a {
     margin-bottom: 0; /* No margin after the last item */
+}
+
+nav a:hover{
+  background-color: #acd8f3;
 }
 
 nav ul li a:hover{
@@ -148,8 +152,8 @@ section {
 }
 
 .photo-placeholder {
-    width: 150px; /* Smaller placeholder for mobile */
-    height: 150px;
+    width:200px; /* Smaller placeholder for mobile */
+    height:200px ;
     background-color: #D3D3D3;
     border: 2px solid #ADD8E6;
     border-radius: 8px;
@@ -222,6 +226,9 @@ section {
     font-size: 0.85rem; /* Smaller card text */
     color: #333; /* Dark grey for card text */
 }
+.course-filters button{
+      color: #f5f1f1;
+      background-color:black ;
 
 .credits-total {
     text-align: center; /* Center the credits total on mobile */
@@ -231,7 +238,24 @@ section {
     color: #000000; /* Black for total credits text */
     font-size: 1rem; /* Adjusted font size */
 }
+.social-links {
+    display: inline-block;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
 
+.social-icon {
+    height: 25px; /* Smaller social icons for mobile */
+    width: 25px;
+    margin-inline: 5rem;
+    vertical-align: middle;
+    transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(80deg) brightness(1.2); /* Tint to lime green */
+}
 /* Footer */
 footer {
     background-color: #000000; /* Black background */
@@ -242,22 +266,7 @@ footer {
     margin-top: 2rem;
 }
 
-.social-links {
-    margin-bottom: 1rem;
-}
 
-.social-icon {
-    height: 25px; /* Smaller social icons for mobile */
-    width: 25px;
-    margin: 0 0.4rem;
-    vertical-align: middle;
-    transition: transform 0.2s ease;
-}
-
-.social-icon:hover {
-    transform: scale(1.1);
-    filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(80deg) brightness(1.2); /* Tint to lime green */
-}
 
 footer p {
     margin: 0.4rem 0; /* Slightly less margin for footer paragraphs */
