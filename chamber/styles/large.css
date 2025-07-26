@@ -1,0 +1,60 @@
+/* chamber/styles/large.css */
+
+@media (min-width: 768px) {
+    /* Header Adjustments */
+    header {
+        padding: 1rem 2rem;
+    }
+
+    .header-container {
+        flex-wrap: nowrap; /* Prevent wrapping on desktop */
+    }
+
+    #menu-button {
+        display: none; /* Hide hamburger on desktop */
+    }
+
+    #primary-nav {
+        display: block; /* Always show nav on desktop */
+        position: static; /* Remove absolute positioning */
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    #primary-nav ul {
+        flex-direction: row; /* Horizontal links on desktop */
+        justify-content: flex-end; /* Push links to the right */
+    }
+
+    #primary-nav ul li a {
+        padding: 0.75rem 1.25rem;
+    }
+
+    /* Footer Adjustments */
+    footer {
+        padding: 2rem;
+    }
+
+    .footer-content {
+        flex-direction: row; /* Arrange items in a row */
+        justify-content: space-between; /* Space them out */
+        text-align: left;
+    }
+
+    .footer-content .contact-info,
+    .footer-content .social-media,
+    .footer-content .development-info {
+        flex: 1; /* Allow items to take equal space */
+        text-align: center; /* Center content within their flex item */
+    }
+
+    .footer-content .contact-info {
+        text-align: left;
+    }
+    
+    .footer-content .development-info {
+        text-align: right;
+    }
+}

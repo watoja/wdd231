@@ -1,0 +1,220 @@
+/* chamber/styles/base.css */
+
+/* Variables and Basic Reset */
+:root {
+    --primary-green: #4CAF50; /* A vibrant, medium green */
+    --accent-yellow: #FFC107; /* A warm, inviting amber/gold */
+    --background-white: #F8F8F8; /* Very light grey */
+    --text-dark-grey: #333333; /* Deep charcoal grey */
+    --text-medium-grey: #666666; /* Medium grey */
+    --light-border-grey: #EEEEEE; /* Very light grey for borders */
+
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --box-shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --box-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+
+    /* Font Family - Poppins from Google Fonts (import in HTML head) */
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--text-dark-grey);
+    background-color: var(--background-white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Skip Link for Accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--accent-yellow);
+    color: var(--text-dark-grey);
+    padding: 8px;
+    z-index: 1000;
+    text-decoration: none;
+    transition: top 0.3s ease-in-out;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-green);
+    color: white;
+    padding: 1rem;
+    box-shadow: var(--box-shadow-md);
+    position: sticky; /* Make header sticky */
+    top: 0;
+    z-index: 100; /* Ensure it stays on top */
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.logo svg {
+    margin-right: 10px;
+    border-radius: 50%; /* If you want the SVG to look circular */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background for logo SVG */
+}
+
+.logo svg text {
+    font-family: 'Poppins', sans-serif; /* Ensure Poppins for SVG text */
+    font-weight: 600;
+}
+
+.logo .name {
+    font-size: 1.8rem;
+    font-weight: 600;
+    white-space: nowrap; /* Prevent "Uganda" from wrapping */
+}
+
+/* Mobile Menu Button (Hamburger) */
+#menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: block; /* Always visible for mobile */
+    z-index: 101; /* Above navigation when open */
+}
+
+#menu-button .hamburger-icon {
+    display: block;
+}
+
+/* Primary Navigation */
+#primary-nav {
+    width: 100%;
+    margin-top: 1rem;
+    display: none; /* Hidden by default on mobile */
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent overlay for mobile menu */
+    position: absolute;
+    left: 0;
+    top: 100%; /* Position below header */
+    box-shadow: var(--box-shadow-md);
+}
+
+#primary-nav.open {
+    display: block; /* Display when menu button is clicked */
+}
+
+#primary-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack links vertically on mobile */
+    width: 100%;
+}
+
+#primary-nav ul li {
+    text-align: center;
+}
+
+#primary-nav ul li a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#primary-nav ul li a:hover,
+#primary-nav ul li a[aria-current="page"] {
+    background-color: rgba(22, 21, 21, 0.866);
+}
+
+/* Main Content Area */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    flex-grow: 1; /* Allows main content to take available space */
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-green);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer-content h3 {
+    color: white;
+    margin-bottom: 0.5rem;
+    font-size: 1.2em;
+}
+
+.footer-content address {
+    font-style: normal;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.footer-content address a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content address a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-media svg {
+    width: 30px;
+    height: 30px;
+    fill: white; /* Make SVGs white */
+    transition: transform 0.2s ease;
+}
+
+.social-media a:hover svg {
+    transform: scale(1.1);
+}
+
+.development-info p {
+    margin: 0;
+    font-size: 0.85em;
+    line-height: 1.4;
+}

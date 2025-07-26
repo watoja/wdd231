@@ -1,0 +1,224 @@
+/* chamber/styles/directory.css */
+
+.directory-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 20px 0;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.directory-header h1 {
+    color: var(--primary-green);
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+.view-toggle {
+    display: flex;
+    gap: 10px;
+}
+
+.view-toggle button {
+    background-color: var(--light-border-grey);
+    border: 1px solid var(--text-medium-grey);
+    padding: 8px 15px;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: var(--text-dark-grey);
+}
+
+.view-toggle button svg {
+    fill: var(--text-dark-grey);
+    width: 20px;
+    height: 20px;
+}
+
+.view-toggle button.active {
+    background-color: var(--accent-yellow);
+    border-color: var(--accent-yellow);
+    color: var(--text-dark-grey); /* Text color remains dark for contrast */
+}
+
+.view-toggle button.active svg {
+    fill: var(--text-dark-grey); /* Icon color matches text */
+}
+
+.view-toggle button:hover:not(.active) {
+    background-color: var(--text-medium-grey);
+    color: white;
+    border-color: var(--text-medium-grey);
+}
+
+.view-toggle button:hover:not(.active) svg {
+    fill: white;
+}
+
+/* Member Display - Grid View */
+#member-container {
+    display: grid;
+    gap: 20px;
+    padding: 0;
+}
+
+#member-container.grid-view {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.member-card {
+    background-color: white;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--box-shadow-md);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.member-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--light-border-grey);
+}
+
+.member-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.member-info h3 {
+    color: var(--primary-green);
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.member-info p {
+    font-size: 0.95em;
+    margin-bottom: 5px;
+    color: var(--text-medium-grey);
+}
+
+.member-info p strong {
+    color: var(--text-dark-grey);
+}
+
+.member-info a {
+    color: var(--primary-green);
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: auto; /* Pushes link to the bottom */
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.member-info a:hover {
+    text-decoration: underline;
+}
+
+/* Member Display - List View */
+#member-container.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--light-border-grey);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--box-shadow-md);
+}
+
+.member-list-item {
+    background-color: white;
+    border-bottom: 1px solid var(--light-border-grey);
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: background-color 0.2s ease;
+}
+
+.member-list-item:last-child {
+    border-bottom: none;
+}
+
+.member-list-item:nth-child(odd) {
+    background-color: #FDFDFD; /* Zebra striping */
+}
+
+.member-list-item:hover {
+    background-color: var(--light-border-grey);
+}
+
+.member-list-item h3 {
+    color: var(--primary-green);
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.member-list-item p {
+    font-size: 0.9em;
+    margin-bottom: 3px;
+    color: var(--text-medium-grey);
+}
+
+.member-list-item a {
+    color: var(--primary-green);
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.member-list-item a:hover {
+    text-decoration: underline;
+}
+
+
+/* Media Queries for directory-specific elements */
+@media (max-width: 767px) {
+    .directory-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .directory-header h1 {
+        font-size: 1.8em;
+    }
+
+    .view-toggle {
+        width: 100%;
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+    .view-toggle button {
+        flex: 1;
+        margin: 0 5px;
+    }
+
+    #member-container.grid-view {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+
+    .member-list-item {
+        padding: 10px 15px;
+    }
+}

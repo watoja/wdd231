@@ -1,0 +1,62 @@
+/* chamber/styles/thankyou.css */
+
+.thankyou-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--box-shadow-md);
+    text-align: center;
+}
+
+.thankyou-container h1 {
+    color: var(--primary-green);
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.thankyou-container p {
+    font-size: 1.1em;
+    color: var(--text-dark-grey);
+    margin-bottom: 15px;
+}
+
+.home-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--accent-yellow);
+    color: var(--text-dark-grey);
+    text-decoration: none;
+    border-radius: var(--border-radius-md);
+    font-weight: 600;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: 1px solid var(--accent-yellow); /* Ensures button look consistent */
+}
+
+.home-button:hover {
+    background-color: #e6b000; /* Slightly darker yellow */
+    transform: translateY(-2px);
+}
+
+/* Media Queries for Thank You Page */
+@media (max-width: 767px) {
+    .thankyou-container {
+        padding: 25px;
+        margin: 30px 20px;
+    }
+
+    .thankyou-container h1 {
+        font-size: 2.2em;
+    }
+
+    .thankyou-container p {
+        font-size: 1em;
+    }
+
+    .home-button {
+        padding: 10px 20px;
+        font-size: 0.95em;
+    }
+}

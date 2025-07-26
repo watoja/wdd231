@@ -1,0 +1,174 @@
+/* chamber/styles/forms.css */
+
+.form-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--box-shadow-md);
+}
+
+.form-container h1 {
+    color: var(--primary-green);
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.form-container p {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--text-medium-grey);
+}
+
+form fieldset {
+    border: 1px solid var(--light-border-grey);
+    border-radius: var(--border-radius-md);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fcfcfc;
+}
+
+form legend {
+    color: var(--primary-green);
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 0 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: var(--text-dark-grey);
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form input[type="url"],
+form textarea {
+    width: calc(100% - 20px); /* Account for padding */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--light-border-grey);
+    border-radius: var(--border-radius-sm);
+    font-size: 1em;
+    color: var(--text-dark-grey);
+    background-color: #fdfdfd;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: var(--primary-green);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+}
+
+form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    accent-color: var(--primary-green); /* Styles the radio button itself */
+}
+
+.membership-benefits {
+    font-size: 0.9em;
+    color: var(--text-medium-grey);
+    background-color: var(--light-border-grey);
+    border-left: 4px solid var(--accent-yellow);
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: var(--border-radius-sm);
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius-md);
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: #388E3C; /* Darker green on hover */
+    transform: translateY(-2px);
+}
+
+.contact-details {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fefefe;
+    border: 1px dashed var(--light-border-grey);
+    border-radius: var(--border-radius-md);
+    text-align: center;
+}
+
+.contact-details h2 {
+    color: var(--primary-green);
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.contact-details p {
+    margin-bottom: 8px;
+    color: var(--text-dark-grey);
+    text-align: center; /* Override default p alignment */
+}
+
+.contact-details a {
+    color: var(--primary-green);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Forms */
+@media (max-width: 767px) {
+    .form-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .form-container h1 {
+        font-size: 1.8em;
+    }
+
+    .form-container p {
+        font-size: 0.9em;
+    }
+
+    form fieldset {
+        padding: 15px;
+    }
+
+    form legend {
+        font-size: 1em;
+    }
+
+    .submit-button {
+        padding: 12px;
+        font-size: 1.1em;
+    }
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Ello Fresh Uganda",
+    "address": "Stall A-15, Kampala Central Market",
+    "phone": "",
+    "websiteurl": "https://www.ellofreshuganda.com/",
+    "imagefilename": "ello.webp",
+    "membershiplevel": "Gold",
+    "category": "Produce",
+    "description": "Daily fresh fruits, vegetables, spices and local herbs sourced directly from farms."
+  },
+  {
+    "name": "Amasaka Gallery",
+    "address": "Plot 12 Birch Avenue, Masaka, Uganda",
+    "phone": "+256701987654",
+    "websiteurl": "https://www.amasakagallery.com/",
+    "imagefilename": "amasaka.webp",
+    "membershiplevel": "Silver",
+    "category": "Crafts, Abstracts, Paintings, textile, Music",
+    "description": "Handmade baskets, intricate carvings, and authentic Ugandan souvenirs, perfect for gifts."
+  },
+  {
+    "name": "Soroti Main Market",
+    "address": "Soroti",
+    "phone": "",
+    "websiteurl": "https://www.reddit.com/r/Africa/comments/1hosjbf/fresh_food_market_in_soroti_main_market_eastern/",
+    "imagefilename": "soroti.webp",
+    "membershiplevel": "Bronze",
+    "category": "Food Stuffs",
+    "description": "A wide selection of local and imported spices, flours, and grains for all your cooking needs."
+  },
+  {
+    "name": "Oscar Kampala Suits",
+    "address": "Universal House, shop F29 Luwum Street, Kampala",
+    "phone": "+256 709 595520",
+    "websiteurl": "https://www.instagram.com/oscarkampalacollection/",
+    "imagefilename": "Ok.webp",
+    "membershiplevel": "Gold",
+    "category": "Apparel",
+    "description": "Authentic kitenge wear, elegant gomesi, and custom tailored clothing for every occasion."
+  },
+  {
+    "name": "NOGAMU",
+    "address": "Plot 45, Bukoto Street",
+    "phone": "+256782785004/+256787409602",
+    "websiteurl": "https://nogamu.org/",
+    "imagefilename": "owino.webp",
+    "membershiplevel": "Silver",
+    "category": "Produce",
+    "description": "Farm-fresh organic vegetables, fruits, and quality dairy products delivered to your door."
+  },
+  {
+    "name": "Niwa Gadgets",
+    "address": "Trusted Phone & accessories Plug , Authenticity is all we deliver ☎️ Kampala",
+    "phone": "+256752186467",
+    "websiteurl": "https://x.com/NiwaGadgets1",
+    "imagefilename": "niwagadgets.webp",
+    "membershiplevel": "Bronze",
+    "category": "iOS , Android/gadgets",
+    "description": "Latest smartphones, accessories, and expert repair services for all your tech needs."
+  },
+  {
+    "name": "YALELO Uganda's #1 FISH",
+    "address": "Yalelo Uganda, Production Facility, Butembe Village, Plot 4, Njeru Municipality, Nyenga Division, Buikwe District",
+    "phone": "+256 779 319 996/ +256 709 190 000",
+    "websiteurl": "https://yalelo.ug/",
+    "imagefilename": "yalelo.webp",
+    "membershiplevel": "Silver",
+    "category": "Fresh fresh water fish",
+    "description": "Fresh Tilapia, Nile Perch, and other aquatic delights, caught daily from Lake Victoria."
+  }
+]
