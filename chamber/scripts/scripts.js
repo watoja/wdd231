@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navToggle.setAttribute('aria-expanded', isExpanded);
     });
 
-    // Close nav when a link is clicked (for single-page nav or after navigation)
+    // Close nav when a link is clicked
     navLinks.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
             if (navLinks.classList.contains('open')) {
