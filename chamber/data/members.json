@@ -59,6 +59,7 @@
     "category": "iOS , Android/gadgets",
     "description": "Latest smartphones, accessories, and expert repair services for all your tech needs."
   },
+  
   {
     "name": "YALELO Uganda's #1 FISH",
     "address": "Yalelo Uganda, Production Facility, Butembe Village, Plot 4, Njeru Municipality, Nyenga Division, Buikwe District",
@@ -68,5 +69,54 @@
     "membershiplevel": "Silver",
     "category": "Fresh fresh water fish",
     "description": "Fresh Tilapia, Nile Perch, and other aquatic delights, caught daily from Lake Victoria."
+  },
+
+  {
+    "name": "Murchison Falls National Park",
+    "address": "Northwestern Uganda",
+    "imagefilename": "murchison.webp",
+    "description": "Uganda's largest and oldest conservation area, home to spectacular waterfalls and a wide variety of wildlife including lions, elephants, and giraffes."
+  },
+  {
+    "name": "Bwindi Impenetrable National Park",
+    "address": "Southwestern Uganda",
+    "imagefilename": "bwindi.webp",
+    "description": "A UNESCO World Heritage site famous for its population of endangered mountain gorillas and its diverse rainforest ecosystem."
+  },
+  {
+    "name": "Kasubi Tombs",
+    "address": "Kasubi, Kampala",
+    "imagefilename": "kasubitombs.webp",
+    "description": "The burial grounds of four Buganda Kings and a UNESCO World Heritage site, representing a unique example of traditional African architecture."
+  },
+  {
+    "name": "Source of the Nile",
+    "address": "Jinja, Uganda",
+    "imagefilename": "sourceofthenile.webp",
+    "description": "The exact point where the world's longest river, the River Nile, begins its journey from Lake Victoria. A historical and scenic landmark."
+  },
+  {
+    "name": "Kibale National Park",
+    "address": "Western Uganda",
+    "imagefilename": "kibale.webp",
+    "description": "Renowned as the 'Primate Capital of the World,' it offers the best chimpanzee tracking experiences and is home to 13 other primate species."
+  },
+  {
+    "name": "Kampala Central Market",
+    "address": "Kampala, Uganda",
+    "imagefilename": "kampalamarket.webp",
+    "description": "A bustling and chaotic hub of commerce, offering everything from fresh produce to crafts and electronics. The heart of the city's trade."
+  },
+  {
+    "name": "Queen Elizabeth National Park",
+    "address": "Western Uganda",
+    "imagefilename": "queenelizabeth.webp",
+    "description": "Known for its stunning landscapes, tree-climbing lions, and boat cruises on the Kazinga Channel, offering views of hippos and crocodiles."
+  },
+  {
+    "name": "Uganda Museum",
+    "address": "Kampala, Uganda",
+    "imagefilename": "museum.webp",
+    "description": "The oldest museum in East Africa, showcasing Uganda's rich cultural heritage, history, and natural history through a variety of exhibits."
   }
 ]
