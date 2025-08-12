@@ -1,105 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Thank You for your submission to the Uganda Market Place!" />
-  <meta name="author" content="abraham-james-watongola-Kaana" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Thank you for your membership application." />
+    <meta name="author" content="abraham-james-watongola-Kaana" />
 
-  <meta property="og:title" content="Thank You! | Uganda Market Place" />
-  <meta property="og:description" content="Your application/message has been received by the Uganda Market Place." />
-  <meta property="og:image" content="https://your-github-username.github.io/wdd231/chamber/images/thankyou-preview.jpg" />
-  <meta property="og:url" content="https://your-github-username.github.io/wdd231/chamber/thankyou.html" />
-  <meta property="og:type" content="website">
+    <title>Thank You! | Uganda Market Place</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
-  <title>Thank You! | Uganda Market Place</title>
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <link rel="stylesheet" href="styles/base.css" />
-  <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)" />
-  
-  <link rel="stylesheet" href="styles/thankyou.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)" />
+    <link rel="stylesheet" href="styles/forms.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <script src="scripts/main.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Skip to Main Content</a>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <svg width="60" height="60" viewBox="0 0 60 60" aria-hidden="true" role="img" aria-labelledby="logoTitle logoDesc">
+                    <title id="logoTitle">Uganda Market Logo</title>
+                    <desc id="logoDesc">Stylized map of Africa with a heart over Uganda, indicating local market focus.</desc>
+                    <circle cx="30" cy="30" r="25" fill="#FFFFFF" />
+                    <path d="M30 5L35 15H25L30 5Z" fill="#FFC107"/>
+                    <path d="M40 30 C 40 40, 20 40, 20 30 C 20 20, 40 20, 40 30 Z" fill="#4CAF50"/>
+                    <path d="M30 35 C 32 32, 28 32, 30 35 Z" fill="#333333"/>
+                </svg>
+                <span class="name">Uganda Market</span>
+            </a>
+            <button id="menu-button" aria-expanded="false" aria-label="Toggle navigation menu">
+                <span class="hamburger-icon">☰</span>
+                <span class="sr-only">Menu</span>
+            </button>
+        </div>
 
-  <header>
-    <div class="header-container">
-      <a href="index.html" class="logo">
-        <svg width="60" height="60" viewBox="0 0 60 60" aria-hidden="true" role="img" aria-labelledby="logoTitle logoDesc">
-            <title id="logoTitle">Uganda Market Logo</title>
-            <desc id="logoDesc">Stylized map of Africa with a heart over Uganda, indicating local market focus.</desc>
-            <circle cx="30" cy="30" r="25" fill="#FFFFFF" />
-            <path d="M30 5L35 15H25L30 5Z" fill="#FFC107"/>
-            <path d="M40 30 C 40 40, 20 40, 20 30 C 20 20, 40 20, 40 30 Z" fill="#4CAF50"/>
-            <path d="M30 35 C 32 32, 28 32, 30 35 Z" fill="#333333"/>
-        </svg>
-        <span class="name">Uganda Market</span>
-      </a>
-      <button id="menu-button" aria-expanded="false" aria-label="Toggle navigation menu">
-        <span class="hamburger-icon">☰</span>
-        <span class="sr-only">Menu</span>
-      </button>
-    </div>
+        <nav id="primary-nav" role="navigation" aria-label="Primary navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                
+            </ul>
+        </nav>
+    </header>
 
-    <nav id="primary-nav" role="navigation" aria-label="Primary navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Discover</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="join.html">Join</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+        <section class="thank-you-container">
+            <h1>Thank You for Joining Us!</h1>
+            <p>Your application has been received. We will review it shortly and get back to you.</p>
+            
+            <div id="application-details">
+                <h2>Application Summary</h2>
+                <div class="detail-item">
+                    <strong>Submitted On:</strong> <span id="display-timestamp"></span>
+                </div>
+                <div class="detail-item">
+                    <strong>Organization Name:</strong> <span id="display-orgName"></span>
+                </div>
+                <div class="detail-item">
+                    <strong>First Name:</strong> <span id="display-firstName"></span>
+                </div>
+                <div class="detail-item">
+                    <strong>Last Name:</strong> <span id="display-lastName"></span>
+                </div>
+                <div class="detail-item">
+                    <strong>Email:</strong> <span id="display-email"></span>
+                </div>
+                <div class="detail-item">
+                    <strong>Phone:</strong> <span id="display-phone"></span>
+                </div>
+            </div>
+            
+            <p><a href="index.html" class="button-secondary">Return to Homepage</a></p>
+        </section>
+    </main>
 
-  <main id="main-content" tabindex="-1">
-    <section class="thankyou-container">
-      <h1>Thank You!</h1>
-      <p>Your application/message has been successfully received.</p>
-      <p>We appreciate your interest in the Uganda Market Place and will get back to you shortly.</p>
-      <p>
-        <a href="index.html" class="home-button">Return to Homepage</a>
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-content">
-      <div class="contact-info">
-        <h3>Contact Us</h3>
-        <address>
-          Muteesa II Street, Kampala<br />
-          Uganda<br />
-          Phone: <a href="tel:+256759659898">(+256) 759 659898</a><br />
-          Email: <a href="mailto:info@ugandamarket.org">info@ugandamarket.org</a>
-        </address>
-      </div>
-      <div class="social-media">
-        <a href="https://www.facebook.com/UgandaMarket" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
-          </svg>
-        </a>
-        <a href="https://www.linkedin.com/company/uganda-market" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
-          </svg>
-        </a>
-      </div>
-      <div class="development-info">
-        <p>&copy; <span id="current-year"></span> Uganda Market Place</p>
-        <p>WDD 231 Project - Abraham James Kaana W</p>
-        <p>Last Modified: <span id="lastModified"></span></p>
-      </div>
-    </div>
-  </footer>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <address>
+                    Muteesa II Street, Kampala<br />
+                    Uganda<br />
+                    Phone: <a href="tel:+256759659898">(+256) 759 659898</a><br />
+                    Email: <a href="mailto:info@ugandamarket.org">info@ugandamarket.org</a>
+                </address>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/UgandaMarket" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/company/uganda-market" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="development-info">
+                <p>&copy; <span id="current-year"></span> Uganda Market Place</p>
+                <p>WDD 231 Project - Abraham James Kaana W</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

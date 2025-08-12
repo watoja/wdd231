@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Murchison Falls National Park",
+    "address": "Northwestern Uganda",
+    "imagefilename": "murchison.webp",
+    "description": "Uganda's largest and oldest conservation area, home to spectacular waterfalls and a wide variety of wildlife including lions, elephants, and giraffes.",
+    "link": "https://www.ugandawildlife.org/discover/parks/murchison-falls-national-park"
+  },
+  {
+    "name": "Bwindi Impenetrable National Park",
+    "address": "Southwestern Uganda",
+    "imagefilename": "bwindi.webp",
+    "description": "A UNESCO World Heritage site famous for its population of endangered mountain gorillas and its diverse rainforest ecosystem.",
+    "link": "https://ugandawildlife.org/national-parks/bwindi-impenetrable-national-park/"
+  },
+  {
+    "name": "Kasubi Tombs",
+    "address": "Kasubi, Kampala",
+    "imagefilename": "kasubi.webp",
+    "description": "The burial grounds of four Buganda Kings and a UNESCO World Heritage site, representing a unique example of traditional African architecture.",
+    "link": "https://www.tripadvisor.com/Attraction_Review-g293841-d317589-Reviews-Kasubi_Tombs-Kampala_Central_Region.html"
+  },
+  {
+    "name": "Source of the Nile",
+    "address": "Jinja, Uganda",
+    "imagefilename": "nile.webp",
+    "description": "The exact point where the world's longest river, the River Nile, begins its journey from Lake Victoria. A historical and scenic landmark.",
+    "link": "https://www.ugandasafaristours.com/blog/the-source-of-the-nile.html"
+  },
+  {
+    "name": "Kibale National Park",
+    "address": "Western Uganda",
+    "imagefilename": "kibale.webp",
+    "description": "Renowned as the 'Primate Capital of the World,' it offers the best chimpanzee tracking experiences and is home to 13 other primate species.",
+    "link": "https://www.ugandawildlife.org/discover/parks/kibale-national-park"
+  },
+  {
+    "name": "Nakasero Market",
+    "address": "Kampala, Uganda",
+    "imagefilename": "kampala.webp",
+    "description": "A bustling and chaotic hub of commerce, offering everything from fresh produce to crafts and electronics. The heart of the city's trade.",
+    "link": "https://en.wikipedia.org/wiki/Nakasero_Market"
+  },
+  {
+    "name": "Queen Elizabeth National Park",
+    "address": "Western Uganda",
+    "imagefilename": "eliza.webp",
+    "description": "Known for its stunning landscapes, tree-climbing lions, and boat cruises on the Kazinga Channel, offering views of hippos and crocodiles.",
+    "link": "https://www.ugandawildlife.org/discover/parks/queen-elizabeth-national-park"
+  },
+  {
+    "name": "Uganda Museum",
+    "address": "Kampala, Uganda",
+    "imagefilename": "museum.webp",
+    "description": "The oldest museum in East Africa, showcasing Uganda's rich cultural heritage, history, and natural history through a variety of exhibits.",
+    "link": "https://ugandamuseums.ug/"
+  }
+]

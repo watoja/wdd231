@@ -1,130 +1,166 @@
-/* chamber/styles/discover.css */
+/*
+* ==========================================
+* General Styles
+* ==========================================
+*/
 
-/* Main Grid Layout for the Discover Page */
+/* Apply a clean, modern font and set a dark background for contrast. */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/*
+* ==========================================
+* Grid Layout and Responsiveness
+* ==========================================
+*/
+
+/* Mobile-first approach: single column layout by default */
 .discover-grid-container {
     display: grid;
-    gap: 20px;
-    margin-top: 20px;
-    padding: 0 1rem;
+    gap: 2rem;
+    grid-template-columns: 1fr;
     grid-template-areas:
         "sidebar"
         "gallery";
 }
 
+/* Sidebar styling */
 .sidebar-info {
     grid-area: sidebar;
-    background-color: var(--background-white);
-    padding: 20px;
-    border-radius: var(--border-radius-md);
-    box-shadow: var(--box-shadow-md);
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.sidebar-info h3, .sidebar-info h4 {
-    color: var(--primary-green);
-    border-bottom: 2px solid var(--accent-yellow);
-    padding-bottom: 5px;
+.sidebar-info:hover {
+    transform: translateY(-5px);
 }
 
+/* Visitor message card inside the sidebar */
 .visit-message-card {
-    background-color: var(--light-bg-grey);
-    padding: 15px;
-    border-radius: var(--border-radius-sm);
-    text-align: center;
-    margin-top: 10px;
+    background-color: #e0f7fa;
+    border-left: 5px solid #00796b;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
 }
 
-#photo-gallery {
-    grid-area: gallery;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr;
-}
-
-/* Card Styling for Discover Page */
-.discover-card {
-    background-color: white;
-    border-radius: var(--border-radius-md);
-    box-shadow: var(--box-shadow-md);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.discover-card h2 {
-    color: var(--primary-green);
-    padding: 15px;
-    font-size: 1.4em;
-    border-bottom: 1px solid var(--light-border-grey);
-}
-
-.discover-card figure {
+.visit-message-card p {
     margin: 0;
 }
 
-.discover-card img {
+/* Photo gallery styling */
+.photo-gallery {
+    grid-area: gallery;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/*
+* ==========================================
+* Card Design
+* ==========================================
+*/
+
+/* Style for each individual card in the gallery */
+.place-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add a subtle lift and shadow on hover */
+.place-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.place-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    display: block;
+    border-bottom: 2px solid #ddd;
 }
 
-.discover-card address,
-.discover-card p {
-    padding: 0 15px;
-    font-size: 0.95em;
-    color: var(--text-medium-grey);
-    margin-bottom: 10px;
+.card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
-.discover-card .button-secondary {
-    margin: 15px;
-    margin-top: auto;
+.card-content h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-/* --- Media Queries for Grid Layout and Image Hover Effects --- */
+.card-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
 
-/* Medium Screens: 641px to 1024px */
-@media (min-width: 641px) {
+.card-content a {
+    display: inline-block;
+    background-color: #4CAF50; /* Primary color */
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+
+.card-content a:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/*
+* ==========================================
+* Large screen adjustments (min-width: 768px)
+* ==========================================
+*/
+
+@media (min-width: 768px) {
+    /* Two-column grid layout for larger screens using named grid areas */
     .discover-grid-container {
-        grid-template-areas:
-            "sidebar gallery gallery";
-        grid-template-columns: 1fr 2fr; /* 1/3 sidebar, 2/3 gallery */
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "sidebar gallery";
+        gap: 3rem;
     }
 
-    #photo-gallery {
-        grid-area: gallery;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Image hover effect for large views only */
+    .place-card img {
+        transition: transform 0.3s ease;
     }
 
-    .discover-card img {
-        /* No hover effect on medium screens or smaller (mobile) */
-        transition: none;
-        transform: none;
-    }
-}
-
-/* Large Screens: 1025px and above */
-@media (min-width: 1025px) {
-    .discover-grid-container {
-        grid-template-areas:
-            "sidebar gallery gallery gallery";
-        grid-template-columns: 1fr 3fr; /* 1/4 sidebar, 3/4 gallery */
-    }
-    
-    #photo-gallery {
-        grid-area: gallery;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    
-    /* Hover effect for large screens only */
-    .discover-card figure img {
-        transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
-        filter: grayscale(0%);
-    }
-
-    .discover-card:hover figure img {
-        transform: scale(1.05); /* Slightly enlarge on hover */
-        filter: grayscale(70%); /* Make it slightly black and white */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add a shadow */
+    .place-card:hover img {
+        transform: scale(1.1); /* Zoom effect on hover */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     }
 }
