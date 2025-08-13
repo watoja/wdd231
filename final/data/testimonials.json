@@ -1,0 +1,34 @@
+[
+  {
+    "author": "Jane Doe",
+    "role": "Web Developer",
+    "company": "Innovate Solutions Inc.",
+    "text": "WorkLink helped me find a great freelance project with a company that values its contractors. The communication was excellent, and payments were always on time.",
+    "rating": 5,
+    "from": "Employee"
+  },
+  {
+    "author": "Mark Smith",
+    "role": "Recruitment Manager",
+    "company": "Creative Agency Co.",
+    "text": "We've hired three amazing designers through WorkLink. The review system is fantastic for vetting talent and finding reliable professionals.",
+    "rating": 5,
+    "from": "Employer"
+  },
+  {
+    "author": "Peter Jones",
+    "role": "Graphic Designer",
+    "company": "Global HR Group",
+    "text": "The platform's job search filters made it easy for me to find a company with a great reputation and positive feedback from other employees.",
+    "rating": 4,
+    "from": "Employee"
+  },
+  {
+    "author": "Susan Williams",
+    "role": "Owner",
+    "company": "StartUp Hub Uganda",
+    "text": "As a small business, we're new to online hiring. WorkLink's rating system gave us the confidence to hire a web developer for our new project.",
+    "rating": 5,
+    "from": "Employer"
+  }
+]

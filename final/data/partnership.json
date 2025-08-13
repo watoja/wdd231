@@ -1,0 +1,98 @@
+[ 
+  {
+            "name": "Innovate Solutions Inc.",
+            "description": "A leading technology firm specializing in cloud computing and data analytics.",
+            "link": "https://innovatesolution.com/",
+            "industry": "Technology"
+        },
+        {
+            "name": "Global HR Group",
+            "description": "Provides human resources consulting and talent management services worldwide.",
+            "link": "https://www.linkedin.com/company/the-global-hr-group/",
+            "industry": "Human Resources"
+        },
+        {
+            "name": "Creative Agency Co.",
+            "description": "A full-service creative agency that partners with top freelance talent.",
+            "link": "https://thecreativeagencyco.com/",
+            "industry": "Marketing"
+        },
+        {
+            "name": "StartUp Hub Uganda",
+            "description": "An incubator and networking space for new businesses and entrepreneurs in Kampala.",
+            "link": "https://startup.ug/",
+            "industry": "Incubator"
+        },
+        {
+            "name": "Eco-Friendly Tech",
+            "description": "Dedicated to creating sustainable technology solutions for a greener planet.",
+            "link": "https://formenergy.com/",
+            "industry": "Technology"
+        },
+        {
+            "name": "Financial Futures",
+            "description": "Helping businesses manage their finances with innovative software and expertise.",
+            "link": "https://placehold.co/128x128/6c757d/FFFFFF?text=FF",
+            "industry": "Finance"
+        },
+        {
+            "name": "Health Connect",
+            "description": "A health tech company improving patient care and clinic management.",
+            "link": "https://apps.apple.com/us/app/health-connect-health-tracker/id6450505957",
+            "industry": "Healthcare"
+        },
+        {
+            "name": "Logistics Pro",
+            "description": "Global logistics and supply chain management for small to large enterprises.",
+            "link": "https://placehold.co/128x128/343a40/FFFFFF?text=LP",
+            "industry": "Logistics"
+        },
+        {
+            "name": "Design Studio X",
+            "description": "Award-winning design agency focused on branding and user experience.",
+            "link": "https://placehold.co/128x128/e83e8c/FFFFFF?text=DSX",
+            "industry": "Marketing"
+        },
+        {
+            "name": "Code Masters",
+            "description": "A software development firm specializing in complex web and mobile applications.",
+            "link": "https://www.ea.com/ea-studios/codemasters",
+            "industry": "Technology"
+        },
+        {
+            "name": "Food Fusion Co.",
+            "description": "Bringing unique and innovative food products to the market.",
+            "link": "https://placehold.co/128x128/6610f2/FFFFFF?text=FFC",
+            "industry": "Food & Beverage"
+        },
+        {
+            "name": "AgriGrow Solutions",
+            "description": "Using technology to improve agricultural efficiency and yield.",
+            "link": "https://placehold.co/128x128/20c997/FFFFFF?text=AGS",
+            "industry": "Agriculture"
+        },
+        {
+            "name": "EduTech Pioneers",
+            "description": "Developing cutting-edge educational software and learning platforms.",
+            "link": "https://placehold.co/128x128/6f42c1/FFFFFF?text=ETP",
+            "industry": "Education"
+        },
+        {
+            "name": "Future Mobility",
+            "description": "Designing and building the next generation of electric vehicles.",
+            "link": "https://placehold.co/128x128/ffc107/1c2b59?text=FM",
+            "industry": "Automotive"
+        },
+        {
+            "name": "Secure Cloud Services",
+            "description": "Providing top-tier cybersecurity and secure cloud hosting solutions.",
+            "link": "https://placehold.co/128x128/e9ecef/212529?text=SCS",
+            "industry": "Technology"
+        },
+        {
+            "name": "Retail Revolution",
+            "description": "Modernizing retail operations with intelligent point-of-sale systems.",
+            "link": "https://placehold.co/128x128/17a2b8/FFFFFF?text=RR",
+            "industry": "Retail"
+        }
+      ]

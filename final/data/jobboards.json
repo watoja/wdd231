@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Freelance Web Developer",
+    "company": "Innovate Solutions Inc.",
+    "location": "Remote",
+    "description": "Develop and maintain responsive websites for various client projects. Requires expertise in HTML, CSS, JavaScript, and React.",
+    "type": "Contract"
+  },
+  {
+    "title": "Junior Graphic Designer",
+    "company": "Creative Agency Co.",
+    "location": "Kampala, Uganda",
+    "description": "Assist the senior design team in creating digital and print materials. Proficiency in Adobe Creative Suite is a must.",
+    "type": "Full-Time"
+  },
+  {
+    "title": "IT Support Specialist",
+    "company": "Global HR Group",
+    "location": "Nairobi, Kenya",
+    "description": "Provide technical support to employees and manage network infrastructure. Experience with Windows and Linux is preferred.",
+    "type": "Full-Time"
+  },
+  {
+    "title": "Social Media Manager",
+    "company": "StartUp Hub Uganda",
+    "location": "Kampala, Uganda",
+    "description": "Manage social media campaigns, create content, and engage with the community to increase brand visibility.",
+    "type": "Part-Time"
+  },
+  {
+    "title": "Content Writer",
+    "company": "Innovate Solutions Inc.",
+    "location": "Remote",
+    "description": "Write engaging articles, blog posts, and website copy. Must have excellent command of the English language and a strong portfolio.",
+    "type": "Contract"
+  },
+  {
+    "title": "Senior UX/UI Designer",
+    "company": "Creative Agency Co.",
+    "location": "Remote",
+    "description": "Lead the design process for new products, from wireframes to final mockups. Requires a deep understanding of user experience principles.",
+    "type": "Full-Time"
+  }
+]

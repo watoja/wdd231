@@ -1,0 +1,113 @@
+.employers-grid {
+    display: grid;
+    /* This creates a responsive grid that fits as many columns as possible. */
+    /* Each column has a minimum width of 300px. */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.page-header {
+    text-align: left;
+    margin-bottom: 3rem;
+    padding-top: 2.5rem;
+     border-top-left-radius: 10px;
+    border-bottom-right-radius: 20px;
+
+}
+/* Styles for the entire clickable card link */
+.job-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%; /* Ensures the link covers the entire card area */
+}
+
+/* Styles for the job card container */
+.job-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+/* Hover effect for the card */
+.job-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Job title styling */
+.job-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1c2b59;
+    margin: 0 0 0.5rem;
+}
+
+/* Company name styling */
+.job-company {
+    font-size: 1rem;
+    color: #5c626a;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+}
+
+/* Job location styling */
+.job-location {
+    font-size: 0.9rem;
+    color: #888;
+    margin: 0 0 1rem;
+}
+
+/* Job description styling */
+.job-description {
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.5;
+    flex-grow: 1; /* Pushes the type span to the bottom */
+    margin-bottom: 1.5rem;
+}
+
+/* Job type tag styling */
+.job-type {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    align-self: flex-start;
+}
+
+/* Specific colors for different job types */
+.job-type.full-time {
+    background-color: #d1e7dd;
+    color: #1c613c;
+}
+
+.job-type.part-time {
+    background-color: #fff3cd;
+    color: #664d03;
+}
+
+.job-type.contract {
+    background-color: #d7e4f1;
+    color: #0b5ed7;
+}
+
+/* General page layout styles for headers and containers */
+
+
+.page-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}

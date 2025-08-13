@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkLink - Testimonials</title>
+    <meta name="description" content="Read what employers and employees have to say about their experience with WorkLink.">
+    <link rel="icon" href="images/wl.png" type="images/x-icon">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/testimonials.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/testimonials.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="final.html" class="logo">
+                <span class="name">WorkLink</span>
+            </a>
+            <button id="menu-button" aria-expanded="false" aria-label="Toggle navigation menu">
+                <span class="hamburger-icon">&#9776;</span>
+            </button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="final.html">Home</a></li>
+                    <li><a href="partnerships.html">Partnerships</a></li>
+                    <li><a href="jobboards.html">JobBoards</a></li>
+                    <li><a href="employers.html">Employers</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   <main>
+        <div class="container">
+            <header class="page-header">
+                <h1 class="page-title">Testimonials</h1>
+                <p class="page-subtitle">A collection of feedback from our valued partners and users.</p>
+            </header>
+
+            <!-- This is where the JavaScript will inject the testimonial cards -->
+            <div id="testimonials-list" class="testimonials-grid">
+                <!-- Testimonial cards will be dynamically added here -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <address>
+                    Muteesa II Street, Kampala<br />
+                    Uganda<br />
+                    Phone: <a href="tel:+256759659898">(+256) 759 659898</a><br />
+                    Email: <a href="mailto:info@worklink.org">info@worklink.org</a>
+                </address>
+            </div>
+            <div class="social-media">
+                <!-- Social media icons here -->
+            </div>
+            <div class="development-info">
+                <p><a href="index.html">SitePlan</a></p>
+                <p>&copy; <span id="current-year"></span> WorkLink</p>
+                <p>WDD 231 Project - Abraham James Kaana W</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

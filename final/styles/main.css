@@ -1,0 +1,227 @@
+/*
+* ==========================================
+* WorkLink General Styles
+* ==========================================
+*/
+
+/* Import Google Fonts for headings and body text */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+/* Apply primary font, colors, and background to the body */
+body {
+    font-family: 'Lato', sans-serif;
+    color: #2D3A5D; /* Deep Blue */
+    background-color: #F8F9FA; /* Light Gray */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*
+* ==========================================
+* Typography
+* ==========================================
+*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2D3A5D; /* Deep Blue */
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/*
+* ==========================================
+* Header & Navigation
+* ==========================================
+*/
+
+header {
+    background-color: #2D3A5D; /* Deep Blue */
+    padding: 1rem;
+    color: #fff;
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.logo .name {
+    margin-left: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation for small screens (hamburger menu) */
+#menu-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    display: block; /* Show hamburger on small screens */
+}
+
+#primary-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    width: 100%;
+    background-color: #2D3A5D;
+    transform: translateY(-150%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 100;
+}
+
+#primary-nav.open ul {
+    transform: translateY(0);
+}
+
+#primary-nav a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    border-bottom: 1px solid #4CAF50;
+    transition: background-color 0.2s ease;
+}
+
+#primary-nav a:hover {
+    background-color: #4CAF50; /* Bright Green */
+}
+
+/*
+* ==========================================
+* Buttons and Links
+* ==========================================
+*/
+
+.btn, a.cta, .action-card {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+}
+
+.btn-primary, a.cta-primary {
+    background-color: #4CAF50; /* Bright Green */
+    color: #fff;
+}
+
+.btn-primary:hover, a.cta-primary:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.btn-secondary, a.cta-secondary {
+    background-color: #E67E22; /* Orange */
+    color: #fff;
+}
+
+.btn-secondary:hover, a.cta-secondary:hover {
+    background-color: #d35400;
+    transform: scale(1.05);
+}
+
+/*
+* ==========================================
+* Footer
+* ==========================================
+*/
+.development-info{
+    color: #F8F9FA;
+}
+footer {
+    background-color: #2D3A5D; /* Deep Blue */
+    color: #F8F9FA; /* Light Gray */
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+footer a {
+    color: #F8F9FA;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #4CAF50; /* Bright Green */
+    text-decoration: underline;
+}
+.development-info p, #current-year, #lastModified, address{
+    color: white;
+}
+
+/*
+* ==========================================
+* Responsive Layout (Larger screens)
+* ==========================================
+*/
+
+@media (min-width: 768px) {
+    #menu-button {
+        display: none; /* Hide hamburger on large screens */
+    }
+
+    #primary-nav ul {
+        position: static;
+        flex-direction: row;
+        transform: none;
+        background: none;
+    }
+
+    #primary-nav a {
+        border-bottom: none;
+        padding: 0.5rem 1rem;
+    }
+}

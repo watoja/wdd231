@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkLink - Our Partnerships</title>
+    <meta name="description" content="View our network of trusted partners, from leading tech companies to local startups.">
+    <link rel="icon" href="images/wl.png" type="images/x-icon">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/partnerships.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/partnerships.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="final.html" class="logo">
+                <span class="name">WorkLink</span>
+            </a>
+            <button id="menu-button" aria-expanded="false" aria-label="Toggle navigation menu">
+                <span class="hamburger-icon">&#9776;</span>
+            </button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="final.html">Home</a></li>
+                    <li><a href="partnerships.html">Partnerships</a></li>
+                    <li><a href="jobboards.html">JobBoards</a></li>
+                    <li><a href="employers.html">Employers</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                   
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Page Header -->
+        <header class="page-header">
+            <h1 class="header-title">Our Valued Partnerships</h1>
+            <p class="header-description">
+                We believe that great things are achieved through great collaboration. Our partners are a diverse group of innovative leaders who share our commitment to excellence and our vision for a better future.
+            </p>
+        </header>
+
+         <section class="partners-grid-container">
+            <div id="partners-grid" class="partners-grid">
+                <p class="loading-message">Loading partnerships...</p>
+            </div>
+        </section>
+
+        <!-- Simple Form to demonstrate Form Action Page -->
+        <section class="form-section">
+            <h2>Contact Us for a Partnership</h2>
+            <form id="partnership-form" action="form-action.html" method="get">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+                
+                <label for="companyName">Company Name:</label>
+                <input type="text" id="companyName" name="companyName" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Modal Dialog Structure for Partner Details -->
+    <div id="partner-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" data-modal-target="partner-modal">&times;</span>
+            <div id="modal-body">
+                <!-- Dynamic content will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Dialog Structure for Form Status -->
+    <div id="status-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" data-modal-target="status-modal">&times;</span>
+            <div id="status-modal-body">
+                <!-- Dynamic status message will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h1>a href="index.html">Home</a></h1>
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <address>
+                    Muteesa II Street, Kampala<br />
+                    Uganda<br />
+                    Phone: <a href="tel:+256759659898">(+256) 759 659898</a><br />
+                    Email: <a href="mailto:info@worklink.org">info@worklink.org</a>
+                </address>
+            </div>
+            <div class="social-media">
+                <!-- Social media icons here -->
+            </div>
+            <div class="development-info">
+                <p><a href="index.html">SitePlan</a></p>
+                <p>&copy; <span id="current-year"></span> WorkLink</p>
+                <p>WDD 231 Project - Abraham James Kaana W</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

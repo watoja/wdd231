@@ -1,0 +1,122 @@
+[
+  {
+    "companyName": "Innovate Solutions Inc.",
+    "industry": "Technology",
+    "location": "United States",
+    "rating": 4.8,
+    "verified": true,
+    "bio": "A leader in cloud solutions and digital transformation, committed to fostering innovation and a flexible work environment."
+  },
+  {
+    "companyName": "Creative Agency Co.",
+    "industry": "Marketing & Advertising",
+    "location": "Uganda",
+    "rating": 4.5,
+    "verified": true,
+    "bio": "Specializing in brand identity and creative campaigns for both local and international clients."
+  },
+  {
+    "companyName": "Global HR Group",
+    "industry": "Human Resources",
+    "location": "Multiple Locations",
+    "rating": 4.9,
+    "verified": true,
+    "bio": "Connecting companies with the best talent and providing comprehensive HR solutions."
+  },
+  {
+    "companyName": "StartUp Hub Uganda",
+    "industry": "Non-profit",
+    "location": "Kampala, Uganda",
+    "rating": 4.2,
+    "verified": false,
+    "bio": "A community-focused hub dedicated to supporting and growing the next generation of startups in Uganda."
+  },
+  {
+    "companyName": "AgriTech Farms",
+    "industry": "Agriculture",
+    "location": "Kenya",
+    "rating": 4.6,
+    "verified": true,
+    "bio": "Innovating agricultural practices with smart farming technology and sustainability initiatives."
+  },
+  {
+    "companyName": "CodeCraft Labs",
+    "industry": "Software Development",
+    "location": "Canada",
+    "rating": 4.7,
+    "verified": true,
+    "bio": "Building modern, scalable applications for enterprises and startups."
+  },
+  {
+    "companyName": "BrightPath Education",
+    "industry": "Education",
+    "location": "South Africa",
+    "rating": 4.5,
+    "verified": false,
+    "bio": "Transforming education through online learning and teacher training programs."
+  },
+  {
+    "companyName": "GreenEarth Energy",
+    "industry": "Renewable Energy",
+    "location": "Norway",
+    "rating": 4.8,
+    "verified": true,
+    "bio": "Leading the charge in wind and solar energy solutions worldwide."
+  },
+  {
+    "companyName": "MediCare Group",
+    "industry": "Healthcare",
+    "location": "United Kingdom",
+    "rating": 4.4,
+    "verified": true,
+    "bio": "Delivering high-quality medical services and research-driven healthcare innovations."
+  },
+  {
+    "companyName": "SkyLink Logistics",
+    "industry": "Transportation",
+    "location": "United States",
+    "rating": 4.3,
+    "verified": false,
+    "bio": "Providing fast, reliable, and sustainable logistics services globally."
+  },
+  {
+    "companyName": "NextGen Retail",
+    "industry": "Retail",
+    "location": "Dubai, UAE",
+    "rating": 4.6,
+    "verified": true,
+    "bio": "Delivering a futuristic retail shopping experience across multiple continents."
+  },
+  {
+    "companyName": "OceanWave Shipping",
+    "industry": "Maritime",
+    "location": "Singapore",
+    "rating": 4.5,
+    "verified": true,
+    "bio": "Specializing in global shipping with a focus on efficiency and safety."
+  },
+  {
+    "companyName": "BuildSmart Construction",
+    "industry": "Construction",
+    "location": "Australia",
+    "rating": 4.7,
+    "verified": true,
+    "bio": "Innovating in sustainable architecture and smart city solutions."
+  },
+  {
+    "companyName": "PixelVision Studios",
+    "industry": "Media & Entertainment",
+    "location": "Japan",
+    "rating": 4.8,
+    "verified": true,
+    "bio": "Producing world-class films, animations, and interactive experiences."
+  },
+  {
+    "companyName": "SafeBank International",
+    "industry": "Banking & Finance",
+    "location": "Switzerland",
+    "rating": 4.9,
+    "verified": true,
+    "bio": "Offering secure, innovative banking and investment services globally."
+  }
+]
